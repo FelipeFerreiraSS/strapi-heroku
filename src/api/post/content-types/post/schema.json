@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "post"
+    "displayName": "post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,19 @@
       "type": "text"
     },
     "imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "texto": {
       "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
     }
   }
 }
